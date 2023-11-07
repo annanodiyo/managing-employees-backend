@@ -1,0 +1,22 @@
+POST http://localhost:4700/employee/register
+Content-Type: application/json
+
+{
+    "name":"John Doe",
+    "email":"john32@yopmail.com",
+    "phone_no":"0702945678",
+    "id_no":"7894654",
+    "KRA_PIN":"DAP5z67",
+    "NHIF_NO":"NF2y345",
+    "NSSF_NO":"NS908k76",
+    "password":"123455567"
+}
+
+###
+POST http://localhost:4700/employee/login
+Content-Type: application/json
+
+{
+    "email":"johnU@yopmail.com",
+    "password":"123455567"
+}
