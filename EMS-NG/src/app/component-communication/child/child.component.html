@@ -1,0 +1,37 @@
+<div class="card p-6 bg-blue-200">
+  <h1>{{ heading }}</h1>
+  <p>{{ body }}</p>
+  <!-- <p>{{ paragraph1 }}</p> -->
+  <!-- event binding -->
+  <!--String interpolation-->
+
+  <button
+    (click)="onClick()"
+    class="bg-blue-700 px-4 py-2 text-white rounded shadow-2xl mr-[20px]"
+  >
+    Click me
+  </button>
+  <button
+    (mouseover)="doSomething()"
+    class="bg-blue-700 px-4 py-2 text-white rounded shadow-2xl mr-[20px]"
+  >
+    go home</button
+  ><br />
+  <input
+    type="text"
+    placeholder="input your name"
+    class="mt-6"
+    name="name"
+    [(ngModel)]="name"
+  />
+  <p>{{ name }}</p>
+  <br />
+  <input type="text" #animal placeholder="Input your pet" /> <br />
+  <br />
+  <button
+    (click)="popName(animal.value)"
+    class="bg-blue-700 px-4 py-2 text-white rounded shadow-2xl mr-[20px]"
+  >
+    submit
+  </button>
+</div>
